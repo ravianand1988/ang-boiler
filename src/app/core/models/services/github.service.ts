@@ -10,8 +10,8 @@ export class GitHubService {
 
    constructor(private http: HttpClient) {
    }
- 
+
    getRepos(userName: string): Observable<Repos[]> {
-        return this.http.get<Repos[]>(this.baseURL + 'users/' + userName + '/repos')
+        return this.http.get<Repos[]>(this.baseURL + 'users/' + userName + '/repos');
    }
 }

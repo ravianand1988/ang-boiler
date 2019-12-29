@@ -10,13 +10,13 @@ export class RepoListComponent {
 
   userName = 'angular';
   repos: Repos[];
- 
+
   loading = false;
   errorMessage;
- 
+
     constructor(private githubService: GitHubService) {
     }
- 
+
     public getRepos() {
         this.loading = true;
         this.errorMessage = '';

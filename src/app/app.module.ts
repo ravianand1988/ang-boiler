@@ -1,18 +1,22 @@
+import { AdminModule } from './admin/admin.module';
+import { GithubModule } from './github/github.module';
+import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RepoListComponent } from './github/pages/list/repo-list/repo-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RepoListComponent
   ],
   imports: [
+    AdminModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GithubModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

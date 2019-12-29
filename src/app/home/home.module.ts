@@ -16,7 +16,6 @@ import { HomeComponent, AboutUsComponent } from './pages';
     ],
     providers: [],
     exports: [
-
     ],
 })
 export class HomeModule {
